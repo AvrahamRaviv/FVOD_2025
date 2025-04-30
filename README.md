@@ -3,7 +3,6 @@
 This repository contains the artifact accompanying our FMCAD 2025 paper:
 
 **Title:** Towards Formal Verification of Deep Neural Networks for Object Detection  
-**Authors:** [Redacted for double-blind review]
 
 ## Repository Structure
 
