@@ -1,4 +1,4 @@
-# FMCAD 2025 Artifact: Towards Formal Verification of Deep Neural Networks for Object Detection
+# Towards Formal Verification of Deep Neural Networks for Object Detection
 
 This repository contains the artifact accompanying our FMCAD 2025 paper:
 
