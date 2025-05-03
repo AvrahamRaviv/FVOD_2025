@@ -1,20 +1,24 @@
-# Towards Formal Verification of Deep Neural Networks for Object Detection
+# Towards Formal Verification of Deep Neural Networks for Object Detection.
 
 This repository contains the artifact accompanying our FMCAD 2025 paper:
 
-**Towards Formal Verification of Deep Neural Networks for Object Detection**
+**Towards Formal Verification of Deep Neural Networks for Object Detection.**
 
 ## Repository Structure
 
 ```
-├── train/      # Pre-processing scripts and data preparation  
-├── eval/       # Modified abcrown with core IoU verification algorithm  
-├── analyze/    # Post-processing and result analysis
-├── data/       
+├── abcrown/    # Extended version of alpha-beta-CROWN with OD/IoU verification functionality  
+├── train/      # Pre-processing scripts (training models, etc.) and data preparation  
+├── analyze/    # Post-processing and result analysis  
 ```
 
-- **train/** and **analyze/**: Contain scripts for pre- and post-processing related to our algorithm.  
-- **eval/**: Hosts the main implementation of our Intersection over Union (IoU) verification algorithm.
+- **abcrown/**: Forked and extended version of [alpha-beta-CROWN](https://github.com/Verified-Intelligence/alpha-beta-CROWN), with added support for object detection and IoU verification.
+- **train/** and **analyze/**: Contain pre- and post-processing utilities.
+- The main entry point is [`abcrown/FVOD/verify_fc.py`](abcrown/FVOD/verify_fc.py), which demonstrates minimal example usage. You can customize arguments as needed.
+
+## Data
+
+Required data is automatically downloaded during the first run.
 
 ## Requirements
 
