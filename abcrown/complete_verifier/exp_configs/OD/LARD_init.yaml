@@ -1,0 +1,24 @@
+model:
+  name: LARD_test
+  path: models/OD_models/LARD_weights.pt
+  tau: 0.1
+data:
+  dataset: LARD_test
+  start: 0
+  end: 10
+  std: [1.]
+  mean: [0.]
+  test_csv: models/OD_models/LARD_test.pkl
+  num_outputs: 1
+specification:
+  epsilon: 0.0000000001
+  norm: .inf
+  robustness_type: OD_IoU
+attack:
+  pgd_restarts: 2
+solver:
+  batch_size: 1
+  beta-crown:
+    iteration: 10
+bab:
+  timeout: 180
