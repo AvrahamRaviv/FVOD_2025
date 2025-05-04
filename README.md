@@ -7,9 +7,11 @@ This repository contains the artifact accompanying our FMCAD 2025 paper:
 
 ## 📁 Repository Structure
 
-├── abcrown/    # Extended alpha-beta-CROWN with OD/IoU verification functionality
-├── train/      # Pre-processing scripts and data preparation
-├── analyze/    # Post-processing and result analysis
+```
+ ├── abcrown/    # Extended version of alpha-beta-CROWN with OD/IoU verification functionality  
+ ├── train/      # Pre-processing scripts (training models, etc.) and data preparation  
+ ├── analyze/    # Post-processing and result analysis  
+ ```
 
 - **abcrown/**: Forked and extended version of [alpha-beta-CROWN](https://github.com/Verified-Intelligence/alpha-beta-CROWN), adding support for object detection and IoU verification.
 - **train/** and **analyze/**: Contain pre- and post-processing utilities.
