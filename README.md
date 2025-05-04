@@ -1,32 +1,27 @@
-# Towards Formal Verification of Deep Neural Networks for Object Detection.
+# FVOD: Artifact for FMCAD 2025
 
 This repository contains the artifact accompanying our FMCAD 2025 paper:
 
-**Towards Formal Verification of Deep Neural Networks for Object Detection.**
+**Title:** Towards Formal Verification of Deep Neural Networks for Object Detection  
+**Authors:** [Redacted for double-blind review]
 
-## Repository Structure
+## 📁 Repository Structure
 
-```
-├── abcrown/    # Extended version of alpha-beta-CROWN with OD/IoU verification functionality  
-├── train/      # Pre-processing scripts (training models, etc.) and data preparation  
-├── analyze/    # Post-processing and result analysis  
-```
+├── abcrown/    # Extended alpha-beta-CROWN with OD/IoU verification functionality
+├── train/      # Pre-processing scripts and data preparation
+├── analyze/    # Post-processing and result analysis
 
-- **abcrown/**: Forked and extended version of [alpha-beta-CROWN](https://github.com/Verified-Intelligence/alpha-beta-CROWN), with added support for object detection and IoU verification.
+- **abcrown/**: Forked and extended version of [alpha-beta-CROWN](https://github.com/Verified-Intelligence/alpha-beta-CROWN), adding support for object detection and IoU verification.
 - **train/** and **analyze/**: Contain pre- and post-processing utilities.
 - The main entry point is [`abcrown/FVOD/verify_fc.py`](abcrown/FVOD/verify_fc.py), which demonstrates minimal example usage. You can customize arguments as needed.
 
-## Data
-
-Required data is automatically downloaded during the first run.
-
-## Requirements
+## 📦 Requirements
 
 This artifact builds upon the [alpha-beta-CROWN](https://github.com/Verified-Intelligence/alpha-beta-CROWN) framework.  
 Please follow their installation instructions.  
 Our repository uses only modified pure-Python scripts and introduces no additional dependencies.
 
-## License
+## 📄 License
 
 MIT License
 
