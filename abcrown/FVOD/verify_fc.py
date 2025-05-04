@@ -131,33 +131,12 @@ def verify(root_dir, sub_model_path, vnnlib_paths, shape, timeout):
     - run in subprocess
     - extract result and counterexample
     """
-    # yaml_path = f"{root_dir}/abcrown.yaml"
     yaml_path = f"{root_dir}/d_loc_init.yaml"
-    # generate_abcrown_yaml_file(
-    #     root_dir, yaml_path, sub_model_path, vnnlib_paths, timeout, shape
-    # )
 
     import abcrown
     abc = abcrown.ABCROWN(args=["--config", yaml_path])
     res = abc.main()
-
-    verifier = "../complete_verifier/abcrown.py"
-    python = "/Users/avrahamraviv/miniconda3/envs/abcrown/bin/python"
-    # output_path = "abcrown_output.txt"
-    # command = f"{python} {verifier} --config {yaml_path} > {output_path}"
-    command = f"{python} {verifier} --config {yaml_path}"
-    result = subprocess.run(command, capture_output=True, text=True, shell=True)
-    output = result.stdout.strip()
-    # extract only number of sat/unsat/timeout (not times and counterexamples)
-    pattern = r"total verified \(safe/unsat\): (\d+) , total falsified \(unsafe/sat\): (\d+) , timeout: (\d+)"
-    match = re.search(pattern, output)
-    return {
-        "safe": match.group(1),
-        "unsafe": match.group(2),
-        "timeout": match.group(3)
-    }, None # None represents that counterexample is missing
-    # res, ce = extract_res_ce(output)
-    return res, ce
+    return res, None
 
 
 def convert_and_save_model_to_onnx(model, path, input_size):
@@ -290,9 +269,4 @@ if __name__ == "__main__":
     convert_and_save_model_to_onnx(network, onnx_path, (1, 1, size, size))
     res, ce = verify(root_dir, onnx_path, vnnlib_paths, shape, timeout)
     print(f"res: {res}, ce={ce}")
-    # if res == "safe":
-    #     return "safe", None
-    # elif res == "unsafe":
-    #     # check that ce is not spurious: runner > winner and confidence > threshold
-    #     if network(ce)[1].argmax() != winner:
-    #         return "unsafe", ce
+    exit(0)
