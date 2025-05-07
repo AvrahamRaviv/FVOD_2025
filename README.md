@@ -46,10 +46,6 @@ Our repository uses only modified pure-Python scripts and introduces no addition
 
 After installing alpha-beta-CROWN, replace its source code with our modified version provided in the `abcrown/` folder of this repository.
 
----
-
-Let me know if you need further assistance or additional modifications.
-
 
 ## 📄 License
 
