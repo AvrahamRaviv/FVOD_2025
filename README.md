@@ -18,9 +18,46 @@ This repository contains the artifact accompanying our FMCAD 2025 paper:
 
 ## 📦 Requirements
 
-This artifact builds upon the [alpha-beta-CROWN](https://github.com/Verified-Intelligence/alpha-beta-CROWN) framework.  
-Please follow their installation instructions.  
-Our repository uses only modified pure-Python scripts and introduces no additional dependencies.
+[![alpha-beta-CROWN/complete\_verifier/docs/abcrown\_usage.md at main ...](https://tse1.mm.bing.net/th?id=OIP.WyW9mlLBJ2dOha4Ej-WMIwHaEo\&cb=iwp1\&pid=Api)](https://github.com/Verified-Intelligence/alpha-beta-CROWN/blob/main/complete_verifier/docs/abcrown_usage.md)
+
+Certainly! Based on the official installation instructions from the [alpha-beta-CROWN repository](https://github.com/Verified-Intelligence/alpha-beta-CROWN), here's the updated installation section for your `README.md`:
+
+---
+
+## Installation
+
+This artifact builds upon the [alpha-beta-CROWN](https://github.com/Verified-Intelligence/alpha-beta-CROWN) framework. Our repository is based on the April 2024 release of alpha-beta-CROWN (commit `1a3533a`).
+
+To set up the environment:
+
+1. **Clone the repository and checkout the specific commit:**
+
+   ```bash
+   git clone --recursive https://github.com/Verified-Intelligence/alpha-beta-CROWN.git
+   cd alpha-beta-CROWN
+   git checkout 1a3533a
+   ```
+
+2. **Create and activate the conda environment:**
+
+   ```bash
+   conda create -n alpha-beta-crown python=3.11 -y
+   conda activate alpha-beta-crown
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   pip install -r complete_verifier/requirements.txt
+   ```
+Our repository uses only modified pure-Python scripts and introduces no additional dependencies beyond those required by alpha-beta-CROWN.
+
+After installing alpha-beta-CROWN, replace its source code with our modified version provided in the `abcrown/` folder of this repository.
+
+---
+
+Let me know if you need further assistance or additional modifications.
+
 
 ## 📄 License
 
