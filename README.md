@@ -16,15 +16,7 @@ This repository contains the artifact accompanying our FMCAD 2025 paper:
 - **train/** and **analyze/**: Contain pre- and post-processing utilities.
 - The main entry point is [`abcrown/FVOD/verify_fc.py`](abcrown/FVOD/verify_fc.py), which demonstrates minimal example usage. You can customize arguments as needed.
 
-## 📦 Requirements
-
-[![alpha-beta-CROWN/complete\_verifier/docs/abcrown\_usage.md at main ...](https://tse1.mm.bing.net/th?id=OIP.WyW9mlLBJ2dOha4Ej-WMIwHaEo\&cb=iwp1\&pid=Api)](https://github.com/Verified-Intelligence/alpha-beta-CROWN/blob/main/complete_verifier/docs/abcrown_usage.md)
-
-Certainly! Based on the official installation instructions from the [alpha-beta-CROWN repository](https://github.com/Verified-Intelligence/alpha-beta-CROWN), here's the updated installation section for your `README.md`:
-
----
-
-## Installation
+## 📦 Requirements and Installation
 
 This artifact builds upon the [alpha-beta-CROWN](https://github.com/Verified-Intelligence/alpha-beta-CROWN) framework. Our repository is based on the April 2024 release of alpha-beta-CROWN (commit `1a3533a`).
 
