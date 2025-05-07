@@ -2,6 +2,11 @@
 
 This repository contains the artifact accompanying our FMCAD 2025 paper:
 
+A static snapshot of the artifact is available at: [https://zenodo.org/records/15355735](https://zenodo.org/records/15355735)  
+DOI: [10.5281/zenodo.15355735](https://doi.org/10.5281/zenodo.15355735)  
+SHA256 checksum: `278d80012405bfaf24bd7443f09e88ed61dd254c43cbceae752bb3c8dae1604f`
+
+
 **Towards Formal Verification of Deep Neural Networks for Object Detection.**
 
 ## 📁 Repository Structure
