@@ -2,7 +2,7 @@
 
 This repository contains the artifact accompanying our FMCAD 2025 paper:
 
-**Title:** Towards Formal Verification of Deep Neural Networks for Object Detection.
+**Towards Formal Verification of Deep Neural Networks for Object Detection.**
 
 ## 📁 Repository Structure
 
@@ -17,6 +17,8 @@ This repository contains the artifact accompanying our FMCAD 2025 paper:
 - The main entry point is [`abcrown/FVOD/verify_fc.py`](abcrown/FVOD/verify_fc.py), which demonstrates minimal example usage. You can customize arguments as needed.
 
 ## 📦 Requirements and Installation
+
+The artifact was tested on a Mac with an Apple M3 chip (8-core CPU, 8-core GPU), 16GB RAM, running macOS 15.4.1 (24E263).
 
 This artifact builds upon the [alpha-beta-CROWN](https://github.com/Verified-Intelligence/alpha-beta-CROWN) framework. Our repository is based on the April 2024 release of alpha-beta-CROWN (commit `1a3533a`).
 
