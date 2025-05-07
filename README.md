@@ -46,6 +46,29 @@ Our repository uses only modified pure-Python scripts and introduces no addition
 
 After installing alpha-beta-CROWN, replace its source code with our modified version provided in the `abcrown/` folder of this repository.
 
+Here’s the `Usage` section to add to your `README.md`:
+
+## Usage
+
+### Minimal Example
+
+After completing installation and replacing the alpha-beta-CROWN source with our modified `abcrown/` folder, you can run a minimal verification example using:
+
+```bash
+python abcrown/FVOD/verify_fc.py --config abcrown/complete_verifier/exp_configs/OD/d_loc_init.yaml
+````
+
+This uses a configuration file for fast evaluation and correctness check.
+
+### General Usage
+
+To run verification with any custom configuration YAML:
+
+```bash
+python abcrown/FVOD/verify_fc.py --config path/to/your_config.yaml
+```
+
+You may customize model path, dataset, perturbation bounds, and verification settings directly in the YAML file.
 
 ## 📄 License
 
