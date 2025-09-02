@@ -1,12 +1,6 @@
-# FVOD: Artifact for FMCAD 2025
+# FVOD: Formal Verification of Object Detection
 
-This repository contains the artifact accompanying our FMCAD 2025 paper:
-
-A static snapshot of the artifact is available at: [https://zenodo.org/records/15355735](https://zenodo.org/records/15355735)  
-DOI: [10.5281/zenodo.15355735](https://doi.org/10.5281/zenodo.15355735)  
-SHA256 checksum: `278d80012405bfaf24bd7443f09e88ed61dd254c43cbceae752bb3c8dae1604f`
-
-
+This repository contains the oficial source code of our paper:
 **Towards Formal Verification of Deep Neural Networks for Object Detection.**
 
 ## 📁 Repository Structure
@@ -23,9 +17,9 @@ SHA256 checksum: `278d80012405bfaf24bd7443f09e88ed61dd254c43cbceae752bb3c8dae160
 
 ## 📦 Requirements and Installation
 
-The artifact was tested on a Mac with an Apple M3 chip (8-core CPU, 8-core GPU), 16GB RAM, running macOS 15.4.1 (24E263).
+The code was tested on a Mac with an Apple M3 chip (8-core CPU, 8-core GPU), 16GB RAM, running macOS 15.4.1 (24E263).
 
-This artifact builds upon the [alpha-beta-CROWN](https://github.com/Verified-Intelligence/alpha-beta-CROWN) framework. Our repository is based on the April 2024 release of alpha-beta-CROWN (commit `1a3533a`).
+It builds upon the [alpha-beta-CROWN](https://github.com/Verified-Intelligence/alpha-beta-CROWN) framework. Our repository is based on the April 2024 release of alpha-beta-CROWN (commit `1a3533a`).
 
 To set up the environment:
 
@@ -53,8 +47,6 @@ Our repository uses only modified pure-Python scripts and introduces no addition
 
 After installing alpha-beta-CROWN, replace its source code with our modified version provided in the `abcrown/` folder of this repository.
 
-Here’s the `Usage` section to add to your `README.md`:
-
 ## Usage
 
 ### Minimal Example
@@ -76,11 +68,3 @@ python abcrown/FVOD/verify_fc.py --config path/to/your_config.yaml
 ```
 
 You may customize model path, dataset, perturbation bounds, and verification settings directly in the YAML file.
-
-## 📄 License
-
-MIT License
-
-Permission is hereby granted to the FMCAD 2025 Program Committee to download, use, and execute this artifact solely for the purpose of artifact evaluation.
-
-The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement.
