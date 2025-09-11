@@ -1,6 +1,8 @@
 # FVOD: Artifact for VMCAI 2026
 
 This repository contains the artifact accompanying our VMCAI 2026 paper:
+
+DOI: [Zenodo link](https://zenodo.org/records/17098701)
  
 SHA256 checksum: `278d80012405bfaf24bd7443f09e88ed61dd254c43cbceae752bb3c8dae1604f`
 
